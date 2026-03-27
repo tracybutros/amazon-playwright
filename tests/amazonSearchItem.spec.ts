@@ -1,10 +1,9 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
+import { AmazonHomePage } from '../pages/amazonHomePage';
 
 test('search item on amazon', async ({ page }) => {
-  await page.goto('/');
-
-  await page.getByPlaceholder('Search Amazon').fill('wireless mouse');
-  await page.click('input[type="submit"]');
-
-  await expect(page).toHaveURL(/s/);
+  const amazonHome = new AmazonHomePage(page);
+  await amazonHome.navigate('/');
+  await amazonHome.searchForItem('wireless mouse');
+  await amazonHome.verifySearchResults();
 });
