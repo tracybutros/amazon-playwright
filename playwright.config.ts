@@ -11,7 +11,7 @@ export default defineConfig({
 
   use: {
     baseURL: 'https://www.amazon.com',
-    headless: false,
+    headless: !!process.env.CI,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
