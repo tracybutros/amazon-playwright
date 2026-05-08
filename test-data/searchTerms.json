@@ -1,0 +1,22 @@
+[
+  {
+    "term": "wireless mouse",
+    "tag": "peripherals",
+    "expectResultsUrl": "/s?k=wireless+mouse"
+  },
+  {
+    "term": "mechanical keyboard",
+    "tag": "peripherals",
+    "expectResultsUrl": "/s?k=mechanical+keyboard"
+  },
+  {
+    "term": "noise cancelling headphones",
+    "tag": "audio",
+    "expectResultsUrl": "/s?k=noise+cancelling+headphones"
+  },
+  {
+    "term": "USB-C hub",
+    "tag": "accessories",
+    "expectResultsUrl": "/s?k=USB-C+hub"
+  }
+]

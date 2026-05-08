@@ -1,0 +1,12 @@
+[
+  {
+    "role": "standard",
+    "email": "test.user@example.com",
+    "password": "TestPass123!"
+  },
+  {
+    "role": "prime",
+    "email": "prime.user@example.com",
+    "password": "PrimePass456!"
+  }
+]
