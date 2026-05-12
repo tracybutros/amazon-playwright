@@ -38,7 +38,7 @@ test.describe('Network Interception @regression', () => {
     });
 
     await page.goto('/');
-    await page.waitForLoadState('networkidle');
+    await page.waitForLoadState('load');
 
     console.log(`Captured ${requests.length} XHR/fetch requests`);
     expect(requests.length).toBeGreaterThanOrEqual(0);

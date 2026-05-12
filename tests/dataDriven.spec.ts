@@ -27,7 +27,7 @@ test.describe('Inline data table @regression', () => {
 // Keeps test data separate from test logic — easy to update without touching code
 // ---------------------------------------------------------------------------
 test.describe('External JSON data @regression', () => {
-  for (const { term, tag }: SearchTerm of searchTerms) {
+  for (const { term, tag } of searchTerms as SearchTerm[]) {
     test(`[${tag}] search "${term}" lands on results page @smoke`, async ({ amazonHome }) => {
       await amazonHome.searchForItem(term);
       await amazonHome.verifySearchResults();
